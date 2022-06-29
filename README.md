@@ -2,7 +2,7 @@
 # Overview of the analysis:
 The purpose of Pyber Challenge 5 is to thoroughly analyze the data in csv files - titled [city_data.csv](Resources/city_data.csv) and [ride_data.csv](Resources/ride_data.csv) - and with the results create a line chart to present our findings. At the end of the analysis the goal was to create a DataFrame showing the total amount of money yielded from fares per each week, over a certain range of dates, in each city type. This DataFrame would then be used to create a line chart.  
 
-Creating a visualization of this data allows us to easily see how the three different city types differ in terms of profitability and how this changes over time. From the analysis and line chart the viewer is able to identify which city type yields the most money in fares, sees the largest amount of rides and drivers, and which weeks are the most profitable. 
+Creating a visualization of this data allows us to easily see how the three different city types differ in terms of profitability and how this changes over time. From the analysis and line chart the viewer is able to identify which city type yields the most money in fares, sees the largest amount of rides and drivers, and which weeks see the most activity. 
 
 
 # Results:
