@@ -43,7 +43,7 @@ Lastly, after analyzing the data and gathering the necessary information I was a
 ## Total Fare by City Type Line Plot 
 
 ### Pivot Table
-For the second portion of this challenge we needed to create a new DataFrame showing the sum() of ‘fares’ for each date and city type. Using the groupby() function I was able to group city types and dates from the original merged DataFrame, and by using the sum() function I was able to add together all the fares received per each day.
+For the second portion of this challenge we needed to create a new DataFrame showing the total of ‘fares’ for each date and city type. Using the .groupby() function I was able to group city types and dates from the original merged DataFrame, and by using the .sum() function I was able to add together all the fares received per each day.
 This DataFrame, titled pyber_date_type_df, was utilized to create a pivot table having the date as the indices, the city types as columns, and the fares as the values. This pivot table is titled pyber_date_type_pivot. 
 
 ![pyber_date_type_pivot.png](Analysis/pyber_date_type_pivot.png) 
