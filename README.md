@@ -27,7 +27,7 @@ In the second cell I divided the total fares per city by the total drivers per c
 ### PyBer Summary Dataframe
 Lastly, after analyzing the data and gathering the necessary information I was able to create a dataframe pyber_summary_df. 
 
-[PyBer_summary_df.png](Analysis/PyBer_summary_df.png) 
+![PyBer_summary_df.png](Analysis/PyBer_summary_df.png) 
 
 ## Total Fare by City Type Line Plot 
 
@@ -35,15 +35,16 @@ Lastly, after analyzing the data and gathering the necessary information I was a
 For the second portion of this challenge we needed to create a new DataFrame showing the sum() of ‘fares’ for each date and city type. Using the groupby() function I was able to group city types and dates from the original merged DataFrame, and by using the sum() function I was able to add together all the fares received per each day.
 This DataFrame, titled pyber_date_type_df, was utilized to create a pivot table having the date as the indices, the city types as columns, and the fares as the values. This pivot table is titled pyber_date_type_pivot. 
 
-[pyber_date_type_pivot.png](Analysis/pyber_date_type_pivot.png) 
+![pyber_date_type_pivot.png](Analysis/pyber_date_type_pivot.png) 
 
 ### Resampled DataFrame and Line Chart
 The next step for this challenge was to create another DataFrame, splicing out information for dates within the range '2019-01-01':'2019-04-29' from the pyber_date_type_pivot DataFrame. This new DataFrame, titled pyber_2019, was then resampled to bin together datapoints within the same week. This resampled DataFrame was titled pyber_2019_resample and was used to create the final product, the line chart titles ‘Total Fare by City Type.'
 pyber_2019_resample DataFrame:
-[pyber_2019_resample.png](Analysis/pyber_2019_resample.png) 
+
+![pyber_2019_resample.png](Analysis/pyber_2019_resample.png) 
 
 Total Fare by City Type line chart:
-[PyBer_fare_summary.png](Analysis/PyBer_fare_summary.png) 
+![PyBer_fare_summary.png](Analysis/PyBer_fare_summary.png) 
 
 # Summary:
 My business recommendations for the CEO would depend on what their goals are for the company. From the data we can see that the average fare per driver and ride are the greatest in rural city types. Rural cities also have the least amount of rides and drivers. Conversely, the urban cities have the most rides and drivers, but the average fare per ride and driver are the least out of the 3 city types.
