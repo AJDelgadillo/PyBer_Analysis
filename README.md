@@ -11,18 +11,28 @@ Creating a visualization of this data allows us to easily see how the three diff
 ### Total Rides
 By using the .groupby() function on ’type’ and .count() on ‘ride_id’ I was able to cumulate how many PyBer rides occurred in each city type. The results show that 125 rides took place in rural cities, 625 rides in suburban cities, and 1,625 rides in urban cities.
 
+  > total_rides_per_city = pyber_data_df.groupby(['type']).count()['ride_id']
+   
 ### Total Drivers
 In a similar fashion to finding the total rides per city type, I used the .groupby() function on ’type’ and .sum() on ‘driver_count’ to find the total drivers providing service in each city type. The results show that 78 drivers were active in rural cities, 490 drivers were active in suburban cities, and 2,405 drivers were active in urban cities.
 
+  > total_drivers_per_city= city_data_df.groupby(['type']).sum()['driver_count']
+
 ### Total Fares 
 Next, I reworked the code used to find the total drivers per city type to find the total fares per city type. To accomplish this I used the .groupby() function on ’type’ and .sum() on ‘fares.’The results show that $4,327.93 was gained in rural cities, $19,356.33 was gained in suburban cities, and $39,854.38 was gained in urban cities.
+
+  > total_fares_per_city= pyber_data_df.groupby(['type']).sum()['fare']
 
 ### Average Fare per Ride 
 In two separate cells I calculated the average fare per ride and average fare per driver. 
 First, I divided the total fares per city by the total rides per city. From this the results show that on average one ride cost $34.62 in rural cities, $30.97 in suburban cities, and $24.53 in urban cities. 
 
+  > avg_fare_per_city = total_fares_per_city/ total_rides_per_city
+
 ### Average Fare per Driver
 In the second cell I divided the total fares per city by the total drivers per city. From this I found that on average one driver correlates to $55.49 in rural cities, $39.50 in suburban cities, and $16.57 in urban cities. 
+
+  > avg_fare_driver_per_city = total_fares_per_city/total_drivers_per_city
 
 ### PyBer Summary Dataframe
 Lastly, after analyzing the data and gathering the necessary information I was able to create a dataframe pyber_summary_df. 
